@@ -76,19 +76,45 @@ Day 14: 全部内容
 
 每个课程都包含完整的可编译示例程序：
 
+### 核心示例（按天）
+
 | 示例程序 | 所属课程 | 描述 |
 |----------|----------|------|
 | first_example.c | Day 1 | 第一个 LMDB 程序 |
+| mmap_benchmark.c | Day 2 | mmap 性能基准测试 |
 | mmap_explorer.c | Day 2 | 内存映射探索工具 |
 | env_demo.c | Day 3 | 环境管理演示 |
 | page_viewer.c | Day 4 | 页面可视化工具 |
 | tree_visualizer.c | Day 5 | B+树可视化工具 |
 | custom_compare.c | Day 5 | 自定义比较函数 |
-| txn_tracker.c | Day 6 | 事务生命周期跟踪器 |
 | nested_txn_demo.c | Day 6 | 嵌套事务演示 |
+| txn_tracker.c | Day 6 | 事务生命周期跟踪器 |
 | commit_analyzer.c | Day 7 | 事务提交分析器 |
 | mvcc_demo.c | Day 8 | MVCC 版本可视化 |
+| cursor_demo.c | Day 9 | 游标操作演示 |
 | lmdb_debugger.c | Day 14 | 完整调试工具集 |
+
+### 底层实现深入
+
+| 示例程序 | 描述 |
+|----------|------|
+| internals_demo.c | 内部数据结构详解 |
+| btree_impl.c | B+ 树实现深度解析 |
+| page_allocator.c | 页面分配器演示 |
+| code_explorer.c | 源代码导航助手 |
+
+### 高级工具
+
+| 示例程序 | 描述 |
+|----------|------|
+| concurrent_demo.c | 多线程并发访问演示 |
+| db_tools.c | 数据库工具集（导出/导入/统计/备份） |
+| db_compare.c | 数据库比较工具 |
+| bulk_loader.c | 高性能批量导入/导出 |
+| perf_test.c | 性能测试套件 |
+| stress_test.c | 压力测试工具 |
+| visualize_db.c | 数据库结构可视化 |
+| cache_simulator.c | 页缓存模拟器 |
 
 ---
 
@@ -237,6 +263,7 @@ mdb_txn_commit(txn);  // 一次提交
 - [性能调优指南](PERFORMANCE-TUNING.md) - 性能优化技巧和最佳实践
 - [故障排除指南](TROUBLESHOOTING.md) - 常见问题诊断和解决方案
 - [数据库对比](DATABASE-COMPARISON.md) - LMDB 与其他数据库的对比
+- [底层实现指南](INTERNALS-GUIDE.md) - 源代码深度解析和学习路径
 
 ### 相关技术
 - Memory-Mapped Files
